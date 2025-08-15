@@ -27,11 +27,15 @@
         margin: 0 auto;
         padding: 20px;
         background-color: #ffffff;
+        overflow: hidden;
+        position: relative;
       }
       main {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        z-index: 999;
+        position: relative;
       }
       .section-1 {
         width: 20%;
@@ -102,9 +106,36 @@
       .line {
         width: 1px;
         height: 100px;
-        background-color: #1DB9D1;
+        background-color: #1db9d1;
         margin: 20px 0;
       }
+
+      .interior1 {
+        width: 100px;
+        height: 100px;
+        background-color: #1db9d100;
+        position: absolute;
+        top: -50px;
+        left: -50px;
+        border: 20px solid #9be3e5;
+        opacity: 0.19;
+        border-radius: 100%;
+        z-index: 10;
+      }
+
+      .interior2 {
+        width: 80px;
+        height: 80px;
+        background-color: transparent;
+        position: absolute;
+        bottom: -40px;
+        right: -40px;
+        border: 20px solid #9be3e5;
+        opacity: 0.19;
+        border-radius: 100%;
+        z-index: 10;
+      }
+     
 
       @media (max-width: 600px) {
         main {
@@ -121,10 +152,22 @@
           width: 80px;
           height: 69.73px;
         }
-        .line{
-            width: 100%;
-            height: 1px;
-            margin: 20px 0;
+        .line {
+          width: 100%;
+          height: 1px;
+          margin: 20px 0;
+        }
+        .interior1 {
+          width: 80px;
+          height: 80px;
+          border: 15px solid #9be3e5;
+        }
+        .interior2 {
+          width: 60px;
+          height: 60px;
+          border: 12px solid #9be3e5;
+          bottom: -30px;
+          right: -30px;
         }
       }
     </style>
@@ -179,20 +222,25 @@
         </section>
         <div class="line"></div>
         <section class="section-3">
-          <p style="font-size: 7px; font-weight: 700;">
+          <p style="font-size: 7px; font-weight: 700">
             TREC Information about Brokerage Services
           </p>
-          <p style="font-size: 7px; font-weight: 700; ">TREC Consumer Protection Notice</p>
-          <p style="font-size: 6px; font-weight: 700;">Individual- NMLS 212099</p>
-          <p style="font-size: 6px; font-weight: 700;">Conmpany- NMLS 1670859</p>
-          <p style="font-size: 4px; font-weight: 700;">
-            Our Website, Programs and Services aim to accurately represent the <br>
+          <p style="font-size: 7px; font-weight: 700">
+            TREC Consumer Protection Notice
+          </p>
+          <p style="font-size: 6px; font-weight: 700">
+            Individual- NMLS 212099
+          </p>
+          <p style="font-size: 6px; font-weight: 700">Company- NMLS 1670859</p>
+          <p style="font-size: 4px; font-weight: 700">
+            Our Website, Programs and Services aim to accurately represent the
+            <br />
             information provided. You are acknowledging that you are ..see more
           </p>
         </section>
       </main>
+      <div class="interior1"></div>
+      <div class="interior2"></div>
     </div>
   </body>
 </html>
-
-<!-- https://i.ibb.co.com/GQbGynwg/logo.png -->
