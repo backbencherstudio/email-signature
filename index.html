@@ -34,13 +34,12 @@
         align-items: center;
       }
       .section-1 {
+        width: 20%;
       }
 
       .logo {
         width: 100px;
         height: 87.16px;
-      }
-      section-2 {
       }
       h2 {
         font-size: 22px;
@@ -79,7 +78,7 @@
         font-weight: 700;
         border-radius: 50px;
       }
-      .socials{
+      .socials {
         display: flex;
         gap: 4px;
         margin-top: 10px;
@@ -98,6 +97,35 @@
         align-items: center;
         font-size: 3.901px;
         color: #fff;
+      }
+
+      .line {
+        width: 1px;
+        height: 100px;
+        background-color: #1DB9D1;
+        margin: 20px 0;
+      }
+
+      @media (max-width: 600px) {
+        main {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .section-2 {
+          margin-top: 20px;
+        }
+        .contact-info {
+          grid-template-columns: 1fr;
+        }
+        .logo {
+          width: 80px;
+          height: 69.73px;
+        }
+        .line{
+            width: 100%;
+            height: 1px;
+            margin: 20px 0;
+        }
       }
     </style>
   </head>
@@ -149,9 +177,17 @@
             <button style="font-size: 7px">Schedule a Consultation</button>
           </div>
         </section>
+        <div class="line"></div>
         <section class="section-3">
-          <p style="font-size: 7px">
+          <p style="font-size: 7px; font-weight: 700;">
             TREC Information about Brokerage Services
+          </p>
+          <p style="font-size: 7px; font-weight: 700; ">TREC Consumer Protection Notice</p>
+          <p style="font-size: 6px; font-weight: 700;">Individual- NMLS 212099</p>
+          <p style="font-size: 6px; font-weight: 700;">Conmpany- NMLS 1670859</p>
+          <p style="font-size: 4px; font-weight: 700;">
+            Our Website, Programs and Services aim to accurately represent the <br>
+            information provided. You are acknowledging that you are ..see more
           </p>
         </section>
       </main>
