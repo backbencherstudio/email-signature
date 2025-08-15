@@ -117,25 +117,24 @@
         position: absolute;
         top: -50px;
         left: -50px;
-        border: 20px solid #9be3e5;
+        border: 30px solid #9be3e5;
         opacity: 0.19;
         border-radius: 100%;
         z-index: 10;
       }
 
       .interior2 {
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
         background-color: transparent;
         position: absolute;
-        bottom: -40px;
-        right: -40px;
-        border: 20px solid #9be3e5;
+        bottom: -50px;
+        right: -50px;
+        border: 30px solid #9be3e5;
         opacity: 0.19;
         border-radius: 100%;
         z-index: 10;
       }
-     
 
       @media (max-width: 600px) {
         main {
@@ -158,16 +157,29 @@
           margin: 20px 0;
         }
         .interior1 {
-          width: 80px;
-          height: 80px;
-          border: 15px solid #9be3e5;
+          width: 100px;
+          height: 100px;
+          background-color: #1db9d100;
+          position: absolute;
+          top: -50px;
+          left: -50px;
+          border: 30px solid #9be3e5;
+          opacity: 0.19;
+          border-radius: 100%;
+          z-index: 10;
         }
+
         .interior2 {
-          width: 60px;
-          height: 60px;
-          border: 12px solid #9be3e5;
-          bottom: -30px;
-          right: -30px;
+          width: 100px;
+          height: 100px;
+          background-color: transparent;
+          position: absolute;
+          bottom: -50px;
+          right: -50px;
+          border: 30px solid #9be3e5;
+          opacity: 0.19;
+          border-radius: 100%;
+          z-index: 10;
         }
       }
     </style>
@@ -241,6 +253,46 @@
       </main>
       <div class="interior1"></div>
       <div class="interior2"></div>
+      <div style="position: absolute; left: 0;">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="79"
+          height="22"
+          viewBox="0 0 79 22"
+          fill="none"
+        >
+          <g opacity="0.73">
+            <path
+              d="M74.23 22H73.48C61.26 9.18 43.47 1.93999 24.53 3.86999C15.56 4.77999 7.26 7.66 0 12.03V11.4C7.25 7.07999 15.54 4.23 24.48 3.32C43.77 1.36 61.89 8.83 74.23 22Z"
+              fill="#9BE3E5"
+            />
+            <path
+              d="M78.2 22H76.76C64.02 7.63 44.8 -0.629993 24.29 1.46001C15.46 2.36001 7.25 5.09001 0 9.24001V7.99001C7.25 3.94001 15.41 1.27 24.18 0.380005C45.4 -1.78 65.26 6.94 78.2 22Z"
+              fill="#9BE3E5"
+            />
+          </g>
+        </svg>
+      </div>
+      <div style="position: absolute; right: 0; top: -5px; rotate: 180deg;">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="79"
+          height="22"
+          viewBox="0 0 79 22"
+          fill="none"
+        >
+          <g opacity="0.73">
+            <path
+              d="M74.23 22H73.48C61.26 9.18 43.47 1.93999 24.53 3.86999C15.56 4.77999 7.26 7.66 0 12.03V11.4C7.25 7.07999 15.54 4.23 24.48 3.32C43.77 1.36 61.89 8.83 74.23 22Z"
+              fill="#9BE3E5"
+            />
+            <path
+              d="M78.2 22H76.76C64.02 7.63 44.8 -0.629993 24.29 1.46001C15.46 2.36001 7.25 5.09001 0 9.24001V7.99001C7.25 3.94001 15.41 1.27 24.18 0.380005C45.4 -1.78 65.26 6.94 78.2 22Z"
+              fill="#9BE3E5"
+            />
+          </g>
+        </svg>
+      </div>
     </div>
   </body>
 </html>
